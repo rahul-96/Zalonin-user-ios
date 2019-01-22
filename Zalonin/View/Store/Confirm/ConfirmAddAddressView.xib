@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQz-fx-lfQ">
+                    <rect key="frame" x="157.5" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Fyt-ty-3YM"/>
+                        <constraint firstAttribute="height" constant="60" id="SpQ-gh-BdH"/>
+                    </constraints>
+                    <state key="normal" image="location_black"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhM-Ck-W6B">
+                    <rect key="frame" x="100" y="77.5" width="175" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="6yP-cg-UPs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="ADD NEW ADDRESS">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KQz-fx-lfQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Nqr-sZ-AeC"/>
+                <constraint firstItem="rhM-Ck-W6B" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rev-ag-GXy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rhM-Ck-W6B" secondAttribute="bottom" constant="7.5" id="lit-PV-brf"/>
+                <constraint firstItem="KQz-fx-lfQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="nQP-WZ-EGj"/>
+                <constraint firstItem="rhM-Ck-W6B" firstAttribute="top" secondItem="KQz-fx-lfQ" secondAttribute="bottom" constant="7.5" id="tgK-Mh-IFQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location_black" width="256" height="256"/>
+    </resources>
+</document>

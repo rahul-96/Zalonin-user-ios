@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="appointmentCell" id="iN0-l3-epB" customClass="AppointmentsTableViewCell" customModule="Zalonin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-ac-ZHw">
+                    <rect key="frame" x="5" y="5" width="365" height="110"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="937-Pt-D5N">
+                            <rect key="frame" x="10" y="10" width="345" height="90"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jaN-hy-KD8">
+                                    <rect key="frame" x="0.0" y="0.0" width="172.5" height="90"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beard Trim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYo-m3-LrT">
+                                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair n Care" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAk-ya-6tR">
+                                            <rect key="frame" x="0.0" y="30" width="172.5" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05 Feb 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZt-oP-Si7">
+                                            <rect key="frame" x="0.0" y="60" width="172.5" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Neg-yW-L9x">
+                                    <rect key="frame" x="172.5" y="0.0" width="172.5" height="90"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18020" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osj-R5-hL6">
+                                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOT AVAILED" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEj-ht-kmU">
+                                            <rect key="frame" x="0.0" y="30" width="172.5" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz5-Zt-utw">
+                                            <rect key="frame" x="0.0" y="60" width="172.5" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="937-Pt-D5N" secondAttribute="trailing" constant="10" id="JAc-2P-F45"/>
+                        <constraint firstItem="937-Pt-D5N" firstAttribute="top" secondItem="hG9-ac-ZHw" secondAttribute="top" constant="10" id="OZ7-Jh-6ZQ"/>
+                        <constraint firstAttribute="bottom" secondItem="937-Pt-D5N" secondAttribute="bottom" constant="10" id="ZhQ-Mz-hqw"/>
+                        <constraint firstItem="937-Pt-D5N" firstAttribute="leading" secondItem="hG9-ac-ZHw" secondAttribute="leading" constant="10" id="nsT-JK-SQn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hG9-ac-ZHw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="T6V-QV-djA"/>
+                <constraint firstAttribute="bottom" secondItem="hG9-ac-ZHw" secondAttribute="bottom" constant="5" id="VPO-hG-TtP"/>
+                <constraint firstItem="hG9-ac-ZHw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="WhY-fa-rju"/>
+                <constraint firstAttribute="trailing" secondItem="hG9-ac-ZHw" secondAttribute="trailing" constant="5" id="w7X-qI-fNK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="appointmentAmountLabel" destination="rz5-Zt-utw" id="5Q7-Rw-hKK"/>
+                <outlet property="appointmentCentreLabel" destination="wAk-ya-6tR" id="egy-E3-GaF"/>
+                <outlet property="appointmentIdLabel" destination="osj-R5-hL6" id="YHM-iu-Ltj"/>
+                <outlet property="appointmentStatusLabel" destination="bEj-ht-kmU" id="rjQ-bq-I2X"/>
+                <outlet property="appointmentTitleLabel" destination="kYo-m3-LrT" id="6b0-Jd-11M"/>
+                <outlet property="borderView" destination="hG9-ac-ZHw" id="56O-rW-J8j"/>
+                <outlet property="dateLabel" destination="QZt-oP-Si7" id="SZd-E4-zJT"/>
+            </connections>
+        </view>
+    </objects>
+</document>

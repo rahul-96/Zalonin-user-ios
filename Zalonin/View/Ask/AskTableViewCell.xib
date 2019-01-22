@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="askCell" id="iN0-l3-epB" customClass="AskTableViewCell" customModule="Zalonin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expert_1" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-zE-4mX">
+                    <rect key="frame" x="15" y="15" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Xpr-zE-4mX" secondAttribute="height" multiplier="1:1" id="LJt-4H-Qoa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ms-65-CR2">
+                    <rect key="frame" x="105" y="20" width="250" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.24313725489999999" green="0.25098039220000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1ms-65-CR2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="3Ta-EX-Pos"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xpr-zE-4mX" secondAttribute="bottom" constant="15" id="KgS-l5-Rae"/>
+                <constraint firstItem="1ms-65-CR2" firstAttribute="leading" secondItem="Xpr-zE-4mX" secondAttribute="trailing" constant="20" id="gX7-dP-DKX"/>
+                <constraint firstItem="Xpr-zE-4mX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="n0w-g5-djs"/>
+                <constraint firstItem="Xpr-zE-4mX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="rnd-7b-zgA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1ms-65-CR2" secondAttribute="trailing" constant="20" id="zcn-jg-I27"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="askImageView" destination="Xpr-zE-4mX" id="l4X-G5-Ejn"/>
+                <outlet property="askLabel" destination="1ms-65-CR2" id="IRR-54-oSM"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="expert_1" width="186" height="186"/>
+    </resources>
+</document>

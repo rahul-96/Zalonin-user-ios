@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="cancelView" customModule="Zalonin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="270"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tell us the reason :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-u1-RHN">
+                    <rect key="frame" x="10" y="10" width="195" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="6ak-dC-xZL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytn-ax-HH4">
+                    <rect key="frame" x="5" y="40" width="290" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="R7Y-eD-TNx"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1bW-HE-6Rk">
+                    <rect key="frame" x="10" y="51" width="280" height="165"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lj3-qc-mCl">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v53-tF-CaD">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="1Zt-ja-Aaf"/>
+                                        <constraint firstAttribute="height" constant="25" id="n9R-Zm-U9j"/>
+                                    </constraints>
+                                    <state key="normal" image="on_black"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trying out booking process" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-IJ-xtL">
+                                    <rect key="frame" x="35" y="0.0" width="245" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="00a-Tp-2n0">
+                            <rect key="frame" x="0.0" y="35" width="280" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUe-08-n3O">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="PBi-rI-KeU"/>
+                                        <constraint firstAttribute="height" constant="25" id="rj5-JY-dsI"/>
+                                    </constraints>
+                                    <state key="normal" image="off_black"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay in Confirmation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDk-8g-IRV">
+                                    <rect key="frame" x="35" y="0.0" width="245" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vta-AE-qWm">
+                            <rect key="frame" x="0.0" y="70" width="280" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkN-xD-ifB">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="8rh-f0-ny8"/>
+                                        <constraint firstAttribute="height" constant="25" id="V8C-c0-ryk"/>
+                                    </constraints>
+                                    <state key="normal" image="off_black"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booked another appointment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxu-tJ-tSL">
+                                    <rect key="frame" x="35" y="0.0" width="245" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tp6-hg-6Ut">
+                            <rect key="frame" x="0.0" y="105" width="280" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guN-bA-gtM">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="UUm-Ec-OjG"/>
+                                        <constraint firstAttribute="height" constant="25" id="hbu-lv-VHp"/>
+                                    </constraints>
+                                    <state key="normal" image="off_black"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salon asked to cancel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHW-VU-rky">
+                                    <rect key="frame" x="35" y="0.0" width="245" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="etK-2I-hWk">
+                            <rect key="frame" x="0.0" y="140" width="280" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b9-oq-Vr8">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="cPx-9D-niX"/>
+                                        <constraint firstAttribute="height" constant="25" id="cRE-BQ-oyv"/>
+                                    </constraints>
+                                    <state key="normal" image="off_black"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Others" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0r-UJ-iza">
+                                    <rect key="frame" x="35" y="0.0" width="245" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jGg-ux-TMA">
+                    <rect key="frame" x="0.0" y="230" width="300" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJS-dh-6Yf">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="CANCEL">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLL-MF-BLY">
+                            <rect key="frame" x="150" y="0.0" width="150" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="DONE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RWw-iY-2rt"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jGg-ux-TMA" secondAttribute="trailing" id="2M6-JR-pK0"/>
+                <constraint firstItem="jGg-ux-TMA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3SJ-kO-iLC"/>
+                <constraint firstItem="Gqf-u1-RHN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ATk-c7-7Al"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ytn-ax-HH4" secondAttribute="trailing" constant="5" id="F68-f1-yzO"/>
+                <constraint firstItem="Ytn-ax-HH4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="JQ9-pl-vhE"/>
+                <constraint firstItem="Ytn-ax-HH4" firstAttribute="top" secondItem="Gqf-u1-RHN" secondAttribute="bottom" constant="10" id="Q6d-qE-1on"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jGg-ux-TMA" secondAttribute="bottom" id="SuF-wp-sgD"/>
+                <constraint firstItem="1bW-HE-6Rk" firstAttribute="top" secondItem="Ytn-ax-HH4" secondAttribute="bottom" constant="10" id="cVE-CB-vbk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1bW-HE-6Rk" secondAttribute="trailing" constant="10" id="fS7-fp-tWF"/>
+                <constraint firstItem="1bW-HE-6Rk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="oW6-kt-mlp"/>
+                <constraint firstItem="Gqf-u1-RHN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="tNx-xc-eqv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="button1" destination="v53-tF-CaD" id="9oQ-ux-YAa"/>
+                <outlet property="button2" destination="JUe-08-n3O" id="YpI-qM-HYk"/>
+                <outlet property="button3" destination="VkN-xD-ifB" id="yfD-PM-uhX"/>
+                <outlet property="button4" destination="guN-bA-gtM" id="BFj-oz-MVo"/>
+                <outlet property="button5" destination="6b9-oq-Vr8" id="CQG-F3-dBj"/>
+                <outlet property="cancelButton" destination="YJS-dh-6Yf" id="a6E-QC-9Mg"/>
+                <outlet property="doneButton" destination="YLL-MF-BLY" id="Rne-LK-NuL"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="-1.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="off_black" width="30" height="30"/>
+        <image name="on_black" width="30" height="30"/>
+    </resources>
+</document>
